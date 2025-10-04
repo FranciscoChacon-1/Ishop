@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - iShop Plaza Maya</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Q6byUhnQCLZcz6LwJ",
+      });
+   })();
+</script>
+</head>
+<body class="bg-light">
+    <header class="bg-primary text-white py-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="iShop Plaza Maya" class="img-fluid" style="max-width: 130px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center text-primary mb-4">Contáctanos</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+
+            <!-- Sección de Personal -->
+            <section class="mt-5">
+                <h2 class="text-center text-primary mb-4">Conoce a Nuestro Personal</h2>
+                <div class="row">
+                    <!-- Miembro del personal 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/personal1.jpg" alt="Juan Pérez" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-top: 15px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Pérez</h5>
+                                <p class="card-text">Gerente de Ventas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro del personal 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/personal2.jpg" alt="María González" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-top: 15px;">
+                            <div class="card-body">
+                                <h5 class="card-title">María González</h5>
+                                <p class="card-text">Asesora de Productos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro del personal 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-lg text-center">
+                            <img src="images/personal3.jpg" alt="Carlos Sánchez" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-top: 15px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos Sánchez</h5>
+                                <p class="card-text">Soporte Técnico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 iShop Plaza Maya | Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Incluir Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init('Q6byUhnQCLZcz6LwJ'); // Aquí va tu USER ID
+  })();
+</script>
+
+</body>
+</html>

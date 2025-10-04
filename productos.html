@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - iShop Plaza Maya</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js" defer></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Q6byUhnQCLZcz6LwJ",
+      });
+   })();
+</script>
+</head>
+<body class="bg-light">
+    <header class="bg-primary text-white py-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="iShop Plaza Maya" class="img-fluid logo-img">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+                    <li class="nav-item"><a href="carrito.html" class="nav-link text-white">Carrito</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center text-primary mb-4">Productos iOS</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg rounded">
+                        <img src="images/1.jpg" alt="iPhone 14" class="card-img-top product-img">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">iPhone 14</h5>
+                            <p class="card-text">$899</p>
+                            <button class="btn btn-success" onclick="agregarAlCarrito('iPhone 14', 899, 'images/1.jpg')">Comprar ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg rounded">
+                        <img src="images/2.jpg" alt="iPad Pro" class="card-img-top product-img">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">iPad Pro 11"</h5>
+                            <p class="card-text">$799</p>
+                            <button class="btn btn-success" onclick="agregarAlCarrito('iPad Pro 11', 799, 'images/2.jpg')">Comprar ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 iShop Plaza Maya | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init('Q6byUhnQCLZcz6LwJ'); // Aquí va tu USER ID
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Estilo para las imágenes de los productos */
+.product-img {
+    width: 100%;  /* Ocupa todo el espacio disponible */
+    height: 200px;  /* Establecer una altura estándar para todas las imágenes */
+    object-fit: cover;  /* Asegura que la imagen no se distorsione */
+    border-radius: 10px;  /* Bordes redondeados */
+}
+
+/* Estilo para el logo */
+.logo-img {
+    width: 150px;  /* Tamaño estándar para el logo */
+    height: auto;  /* Mantener la proporción */
+}
+
+/* Estilo para los productos en el carrito */
+#items-carrito img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilo adicional para el carrito */
+#items-carrito .row {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
