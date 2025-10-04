@@ -87,12 +87,13 @@ function finalizarCompra() {
     recibo += `\nTotal a pagar: $${total}`;
 
     // Solicitar al usuario su correo
-    const email = prompt("Por favor, ingresa tu correo electrónico para enviarte el recibo:");
+ const email = prompt("Por favor, ingresa tu correo electrónico para enviarte el recibo:");
 
-    if (!email) {
-        alert("Debes proporcionar un correo electrónico.");
-        return;
-    }
+if (!email || !email.includes('@')) {
+    alert("Debes proporcionar un correo electrónico válido.");
+    return;
+}
+
 
     // Inicializar EmailJS con tu usuario (User ID)
     emailjs.init('Q6byUhnQCLZcz6LwJ'); // Aquí va tu USER ID que obtuviste en tu cuenta de EmailJS
@@ -109,7 +110,7 @@ function finalizarCompra() {
     };
 
     // Enviar el correo con EmailJS
-    emailjs.send('service_33r87jb', 'template_aod5g7v', templateParams)
+    emailjs.send('service_33r87jb', 'template_o69en3o', templateParams)
         .then(function(response) {
             alert('Correo enviado exitosamente!');
         }, function(error) {
